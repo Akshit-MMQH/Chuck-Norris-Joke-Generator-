@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chuck Norris Jokes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Chuck Norris Jokes</h1>
+  <button id="getJoke">Get Joke</button>
+  <p id="joke">Click the button to get a joke!</p>
+
+  <script>
+    document.getElementById("getJoke").addEventListener("click", async () => {
+      const res = await fetch("/api/joke");
+      const data = await res.json();
+      document.getElementById("joke").innerText = data.joke;
+    });
+  </script>
+</body>
+</html>
