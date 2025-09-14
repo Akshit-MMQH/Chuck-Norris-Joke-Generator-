@@ -10,7 +10,7 @@ async function getJoke() {
     const data = await response.json();
     return data.value; 
   } catch (err) {
-    return "Error fetching joke 🤕";
+    return "Error fetching joke";
   }
 }
 
@@ -48,4 +48,5 @@ const server = http.createServer(async (req, res) => {
 server.listen(3000, () => {
   console.log("Server running at http://localhost:3000");
 });
+
 
