@@ -12,7 +12,7 @@ h1 {
 button {
   padding: 10px 20px;
   background: #2052b0;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -27,4 +27,5 @@ button:hover {
   font-size: 20px;
   font-style: italic;
 }
+
 
